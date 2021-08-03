@@ -22,9 +22,10 @@ class App extends Component {
     return (
       <div className="App">
         <CardList name="Pang">
-          <h1>Pawornwan</h1>   {/*this is children prop */}
+          {this.state.monsters.map(monsters =>
+            (<h1 key={monsters.id}>{monsters.name}</h1>))}
+          {/* <h1>Pawornwan</h1> this is children prop */}
         </CardList>
-        {this.state.monsters.map(monsters => (<h1 key={monsters.id}>{monsters.name}</h1>))}
       </div >
     )
   }
