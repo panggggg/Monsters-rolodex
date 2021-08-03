@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { CardList } from './components/card-list/card-list.component';
 
 class App extends Component {
   constructor() {
@@ -20,6 +21,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <CardList name="Pang">
+          <h1>Pawornwan</h1>   {/*this is children prop */}
+        </CardList>
         {this.state.monsters.map(monsters => (<h1 key={monsters.id}>{monsters.name}</h1>))}
       </div >
     )
