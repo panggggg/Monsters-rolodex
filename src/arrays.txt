@@ -1,0 +1,14 @@
+-----------------map()----------------------
+const myArray = [1, 2, 3, 4];
+
+myArray.map(el => el + 1)
+output: [2, 3, 4, 5]
+
+myArray.map(() => "b")
+output: ["b", "b", "b", "b"]
+
+-----------------filter()-------------------
+const myArray = [1, 3, 5, 7, 9];
+
+myArray.filter(el => el > 4)
+output: [5, 7, 9]
